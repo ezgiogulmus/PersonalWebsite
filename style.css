@@ -1,0 +1,245 @@
+html {
+    padding: 0px;
+}
+@media (max-width: 800px) {
+    body {
+        margin: 0px;
+        color: #0c284d;
+        background-color: rgb(255, 254, 239);
+        width: 100vw;
+    }
+
+    .page1m {
+        height: 100vh;
+
+    }
+
+    .img_wrapper {
+        width: 100vw;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_wrapper img {
+        height: 40vh;
+        margin: 2em 0;
+    }
+    h1 {
+        font-family: 'Reenie Beanie', cursive;
+        font-style: italic;
+        font-size: 4em;
+        margin: 0;
+        text-align: center;
+    }
+
+    .summary {
+        width: 95%;
+        line-height: 130%;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+    }
+    .top-hr {
+        border-style: none;
+        border-bottom: .3em dotted #0c284d;
+        width: 20%;
+        height: 0px;
+        padding: 1em;
+    }
+
+    .page1 {
+        display: none;
+    }
+
+    .page3 {
+        display: none;
+    }
+
+    h2 {
+        align-self:normal;
+        font-family: 'Reenie Beanie', cursive;
+        font-style: italic;
+        font-size: 3em;
+        margin: 2%;
+    }
+
+    table {
+        width: 100vw;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .page4 {
+        width: 90vw;
+        margin: 0 2%;
+    }
+    .contact {
+        position: relative;
+        top: 20%;
+        margin: 4% 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    .contact img {
+        height: 2.5em;
+        margin: 1em;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        margin: 0px;
+        color: #0c284d;
+        background-size: 300% 300%;
+        background-image: linear-gradient(
+            270deg, 
+            rgb(244, 215, 255) 0%, 
+            rgba(246, 228, 235,1) 25%, 
+            rgba(248, 241, 215,1) 51%, 
+            rgb(250, 255, 195) 100%
+        );  
+        animation: AnimateBG 120s ease infinite;
+    }
+
+    @keyframes AnimateBG { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+    .page1 {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page1 img {
+        height: 60vh;
+        margin: 5em;
+    }
+
+    .intro{
+        margin: 0px;
+    }
+
+    h1 {
+        font-family: 'Reenie Beanie', cursive;
+        font-style: italic;
+        font-size: 8rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .summary {
+        width: 95%;
+        line-height: 150%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .top-hr {
+        border-style: none;
+        border-top: 10px dotted #0c284d;
+        width: 5%;
+        height: 0px;
+        padding-bottom: 0px;
+    }
+
+    .page2 {
+        width: 100vw;
+        align-items: center;
+        font-size: 1.5rem;
+        justify-content: center;
+        display: flex;
+    }
+
+    .page3 {
+        width: 100vw;
+        align-items: center;
+        font-size: 1.5rem;
+        justify-content: center;
+        display: flex;
+    }
+    .page1m {
+        display: none;
+    }
+    
+    .page4 {
+        display: none;
+    }
+    h2 {
+        align-self:normal;
+        font-family: 'Reenie Beanie', cursive;
+        font-style: italic;
+        font-size: 5rem;
+        margin: 2%;
+    }
+
+    table {
+        border-style: none;
+        border-spacing: 1em;
+        text-align: center;
+        width: 90%;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    th {
+        border-bottom: solid;
+    }
+
+    .edu_table {
+        width: 60%;
+    }
+
+    .date {
+        width: 15em;
+    }
+
+    .bottom-hr1 {
+        height: 6px;
+        background-image: radial-gradient(
+          closest-side,
+          hsla(0, 0%, 50%, 1.0),
+          hsla(0, 0%, 50%, 0) 100%);
+        position: relative;
+      }
+    .bottom-hr1:after {
+        position: absolute;
+        top:  50%;
+        left: 50%;
+        display:block;
+        background-color: hsl(0, 0%, 75%);
+        height: 12px;
+        width:  12px;
+        transform: rotate(45deg);
+        margin-top:  -10px;
+        margin-left: -10px;
+        border-radius: 4px 0;
+        border: 4px solid hsla(0, 0%, 100%, 0.35);
+        background-clip: padding-box;
+        box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+    }
+    .bottom-hr2 {
+        display: none;
+    }
+    
+    .contact {
+        position: relative;
+        top: 20%;
+        margin: 4% 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    .contact img {
+        height: 4em;
+        margin: 1em 3em;
+    }
+}
